@@ -57,14 +57,18 @@ class TimerViewModel extends TimerModel{
   //else
   else{
     
-    /*  */
+    /* Call the method setButtonStatus and pass the String as parameter  */
     setButtonStatus(buttonstatus: "Start");
+
+    /* Call the stopTimer method */
     stopTimer();
   }
  }
  
+ /* Create a void method named stopTimer() */
  void stopTimer()
  {
+  // Cancel the timer
     timer!.cancel();
  }
 
